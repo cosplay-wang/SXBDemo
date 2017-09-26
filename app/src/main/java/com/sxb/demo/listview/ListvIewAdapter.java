@@ -133,11 +133,21 @@ public class ListvIewAdapter extends BaseAdapter {
         TextView textViewContent;
         @BindView(R.id.item1_image)
         ImageView imageView;
-
+        ViewGroup.LayoutParams params;
         public ViewHolder1(View view) {
             ButterKnife.bind(this, view);
+            params = imageView.getLayoutParams();
+            params.width = 60;
+            params.height = 60;
+            imageView.setLayoutParams(params);
         }
     }
+
+    /**
+     * 获取屏幕宽度
+     * @param context
+     * @return
+     */
     public static int getDeviceWidth(Context context) {
         DisplayMetrics metrics = new DisplayMetrics();
         ((Activity)context).getWindowManager().getDefaultDisplay().getMetrics(metrics);
