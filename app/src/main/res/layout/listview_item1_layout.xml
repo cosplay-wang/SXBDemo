@@ -27,10 +27,10 @@
             android:layout_weight="1"/>
     </LinearLayout>
     <ImageView
+        android:layout_gravity="center"
         android:id="@+id/item1_image"
-        android:layout_width="0dp"
+        android:layout_width="20dp"
         android:layout_height="match_parent"
-        android:layout_weight="1"
         android:scaleType="fitXY"/>
 
 </LinearLayout>
