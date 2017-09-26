@@ -22,9 +22,11 @@
             android:enabled="true"
             android:exported="true">
             <intent-filter>
-                <action android:name="a.b.c"></action>
+                <action android:name="a.b.c" />
             </intent-filter>
         </receiver>
+
+        <activity android:name=".listview.ListViewActivity"></activity>
     </application>
 
 </manifest>

@@ -4,13 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sxb.demo.MainActivity">
+    tools:context="com.sxb.demo.MainActivity"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/send_broad"
         android:layout_width="match_parent"
         android:gravity="center"
         android:layout_height="50dp"
-        android:text="Hello World!" />
+        android:text="广播" />
+    <TextView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="50dp"
+        android:text="列表" />
 
 </LinearLayout>
